@@ -1,7 +1,9 @@
 # Stereo-Visual-Odometry
 This is the implementation of Visual Odometry using the stereo image sequence from the KITTI dataset
 
-Visual Odometry in action: https://www.youtube.com/watch?v=B-6oqZwLLEs&t=4s
+Visual Odometry in action: 
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://www.youtube.com/watch?v=B-6oqZwLLEs&t=4s)
+
 Link to dataset - https://s3.eu-central-1.amazonaws.com/avg-kitti/raw_data/2011_09_28_drive_0001/2011_09_28_drive_0001_sync.zip
 
 Visual Odometry is the process of incrementally estimating the pose of a vehicle using the images obtained from the onboard cameras. Its applications include, but are not limited to, robotics, augmented reality, wearable computing, etc. In this work, we implement stereo visual odometry using images obtained from the KITTI Vision Benchmark Suite and present the results the approache. We implement stereo visual odometry using 3D-2D feature correspondences. We find that between frames, using a combination of feature matching and feature tracking is better than implementing only feature matching or only feature tracking. Also, we find that stereo odometry is able a reliable trajectory without the need of an absolute scale as expected.
