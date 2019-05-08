@@ -6,16 +6,16 @@ Link to dataset - https://s3.eu-central-1.amazonaws.com/avg-kitti/raw_data/2011_
 
 Visual Odometry is the process of incrementally estimating the pose of a vehicle using the images obtained from the onboard cameras. Its applications include, but are not limited to, robotics, augmented reality, wearable computing, etc. In this work, we implement stereo visual odometry using images obtained from the KITTI Vision Benchmark Suite and present the results the approache. We implement stereo visual odometry using 3D-2D feature correspondences. We find that between frames, using a combination of feature matching and feature tracking is better than implementing only feature matching or only feature tracking. Also, we find that stereo odometry is able a reliable trajectory without the need of an absolute scale as expected.
 
-Problem Formulation:
+## Problem Formulation:
 
-Input
+### Input
 Our input consists of a stream of gray scale or color images obtained from a pair of cameras. This data is obtained from the KITTI Vision Benchmark Suite. Let the pair of images captured at time k and k+1 be (Il,k, Ir,k) and (Il,k+1, Ir,k+1 ) respectively. The intrinsic and extrinsic parameters of the cameras are obtained via any of the available stereo camera calibration algorithms or the dataset
 
-Output
+### Output
 For every stereo image pair we receive after every time step we need to find the rotation matrix R and translation vector t, which together describes the motion of the vehicle between two consecutive frames. 
 
 
-Algorithm Outline:
+## Algorithm Outline:
 1. Read left (Il,0) and right (Ir,0) images of the initial car position
 2. Match features between the pair of images 
 3. Triangulate matched feature keypoints from both images
