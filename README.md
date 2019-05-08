@@ -2,7 +2,7 @@
 This is the implementation of Visual Odometry using the stereo image sequence from the KITTI dataset
 
 Visual Odometry in action: 
-[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://www.youtube.com/watch?v=B-6oqZwLLEs&t=4s)
+[![Watch the video](https://github.com/akshay-iyer/Stereo-Visual-Odometry/blob/master/tn.png)](https://www.youtube.com/watch?v=B-6oqZwLLEs&t=4s)
 
 Link to dataset - https://s3.eu-central-1.amazonaws.com/avg-kitti/raw_data/2011_09_28_drive_0001/2011_09_28_drive_0001_sync.zip
 
